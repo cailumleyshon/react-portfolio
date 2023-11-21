@@ -3,7 +3,6 @@
 .navbar {
   position: relative;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding-top: 60px;
   z-index: 2;
@@ -59,7 +58,7 @@ ul {
 
   .burger {
     display: flex;
-    gap: 200px;
+    justify-content: space-between;
   }
 
   .menu {
