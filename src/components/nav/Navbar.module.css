@@ -1,0 +1,104 @@
+@import "../../vars.css";
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 60px;
+  z-index: 2;
+  margin: 0 5%;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 900;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.hamburger {
+  display: none;
+}
+.blinktext {
+  animation: blinker 1s step-end infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.menu {
+  display: flex;
+  position: relative;
+}
+
+.menuItems {
+  display: flex;
+  gap: 45px;
+  list-style: none;
+}
+
+ul {
+  margin-bottom: 50px;
+}
+
+.menuItems a {
+  font-size: 25px;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 830px) {
+  .navbar {
+    flex-direction: column;
+    align-self: flex-start;
+  }
+
+  .burger {
+    display: flex;
+    gap: 200px;
+  }
+
+  .menu {
+    position: relative;
+    display: flex;
+    right: 0;
+    margin-right: 10%;
+    align-items: center;
+    gap: 10px;
+    z-index: 3;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    position: fixed;
+  }
+  .menuItems {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    border-radius: 10px;
+    background: rgb(25, 55, 109);
+    background: linear-gradient(
+      0deg,
+      rgba(25, 55, 109, 0.2) 0%,
+      rgba(25, 55, 109, 1) 100%
+    );
+    padding: 25px 30px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    transition: visibility 0s, opacity 0.5s;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+
+  .menuOpen {
+    display: flex;
+  }
+}
