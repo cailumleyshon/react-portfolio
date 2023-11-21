@@ -1,13 +1,29 @@
 import styles from "./Navbar.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Spin as Hamburger } from "hamburger-react";
 
 export default function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const [showHamburger, setShowHamburger] = useState(window.innerWidth < 830);
 
   const handleToggle = (toggled) => {
     setMenuOpen(toggled);
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setShowHamburger(window.innerWidth < 830);
+      setMenuOpen(false);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <nav className={styles.navbar}>
@@ -16,17 +32,19 @@ export default function Navbar() {
           cailum.dev
           <span className={styles.blinktext}>_</span>
         </a>
-        <Hamburger
-          className={styles.hamburger}
-          rounded
-          label="Show Menu"
-          size={35}
-          duration={0.4}
-          color="#4FD1C5"
-          easing="ease-in"
-          hideOutline={false}
-          onToggle={handleToggle}
-        />
+        {showHamburger && (
+          <Hamburger
+            className={styles.hamburger}
+            rounded
+            label="Show Menu"
+            size={35}
+            duration={0.4}
+            color="#4FD1C5"
+            easing="ease-in"
+            hideOutline={false}
+            onToggle={handleToggle}
+          />
+        )}
       </div>
       <div className={styles.menu}>
         <ul
