@@ -1,9 +1,9 @@
 :root {
-  --color-text: #fff;
-  --color-primary: #576cbc;
-  --color-secondary: #19376d;
-  --color-dark: #0b2447;
-  --color-bg: #04152d;
+  --color-text: #d1610b;
+  --color-primary: #ff9100;
+  --color-secondary: #ff8500;
+  --color-dark: #ff7900;
+  --color-bg: #ff9e00;
 
   --font-quicksand: "Quicksand";
 }

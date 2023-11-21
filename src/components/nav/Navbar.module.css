@@ -16,11 +16,12 @@
   color: var(--color-text);
 }
 
-.hamburger {
-  display: none;
+.hamburger-react {
+  margin-bottom: 50px;
 }
 .blinktext {
   animation: blinker 1s step-end infinite;
+  color: #b6550b;
 }
 
 @keyframes blinker {
@@ -82,11 +83,10 @@ ul {
     align-items: center;
     gap: 12px;
     border-radius: 10px;
-    background: rgb(25, 55, 109);
+    background: rgb(255, 162, 0);
     background: linear-gradient(
       0deg,
-      rgba(25, 55, 109, 0.2) 0%,
-      rgba(25, 55, 109, 1) 100%
+      rgba(238, 169, 71, 0.2) 0% rgba(238, 169, 71, 1) 100%
     );
     padding: 25px 30px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);

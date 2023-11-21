@@ -39,7 +39,7 @@ export default function Navbar() {
             label="Show Menu"
             size={35}
             duration={0.4}
-            color="#4FD1C5"
+            color="#ff6d00"
             easing="ease-in"
             hideOutline={false}
             onToggle={handleToggle}
