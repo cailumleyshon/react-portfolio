@@ -51,6 +51,20 @@ ul {
   text-decoration: none;
 }
 
+.menuItems a::after {
+  content: "";
+  display: block;
+  margin: auto;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-text);
+  transition: 0.3s;
+}
+
+.menuItems a:hover::after {
+  width: 100%;
+}
+
 @media screen and (max-width: 830px) {
   .navbar {
     flex-direction: column;

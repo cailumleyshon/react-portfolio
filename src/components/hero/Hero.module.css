@@ -47,6 +47,15 @@
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.25);
 }
 
+.contact:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.icon {
+  margin-left: 15px;
+}
+
 .heroImg {
   height: 40%;
   width: 40%;
