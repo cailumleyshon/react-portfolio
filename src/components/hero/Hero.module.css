@@ -28,7 +28,6 @@
 .name {
   color: var(--color-secondary);
   font-weight: 900;
-  border-bottom: 10px double;
 }
 
 .bio {
@@ -36,26 +35,54 @@
   margin-bottom: 50px;
 }
 
-.contact {
-  text-decoration: none;
-  background-color: var(--color-primary);
-  color: var(--color-text);
-  border-radius: 100px;
-  font-size: 30px;
-  font-weight: 600;
-  padding: 20px 25px;
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.25);
+.eyeBlink {
+  animation: blinker 2s infinite;
+  color: #2d2a2a;
 }
 
-.contact:hover {
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
-  cursor: pointer;
+@keyframes blinker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  20%,
+  50% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 0.2;
+  }
 }
 
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+  border-bottom: 1px solid #b6550b;
+}
 .icon {
-  margin-left: 15px;
+  height: 60px;
+  width: 60px;
+  text-decoration: none;
+  background-color: transparent;
+  border-radius: 100px;
+  font-size: 60px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px 10px;
+  box-shadow: 0 0 6px 0 0.6;
+  transition: transform 0.6s;
 }
 
+.emailIcon {
+  height: 57px;
+}
+
+.icon:hover {
+  cursor: pointer;
+  transform: rotate(20deg);
+  transition: transform 0.6s;
+}
 .heroImg {
   height: 40%;
   width: 40%;
@@ -63,6 +90,7 @@
   animation: bouncing 3s infinite ease-in-out;
   opacity: 80%;
   filter: drop-shadow(-10px -10px 0 #73250b) drop-shadow(10px 10px 0 #de7513);
+  margin-right: 105px;
 }
 
 @keyframes bouncing {
@@ -96,7 +124,7 @@
   height: 50vw;
   min-width: 250px;
   top: 240px;
-  right: -25vw;
+  right: -10vw;
   border-radius: 750px;
   background: rgba(238, 169, 71, 0.7);
   filter: blur(50px);
@@ -114,6 +142,7 @@
   }
 
   .heroImg {
+    margin: 0 auto;
     margin-bottom: 50px;
   }
 }
