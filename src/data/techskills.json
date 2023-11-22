@@ -1,0 +1,50 @@
+[
+  {
+    "title": "HTML",
+    "imageSrc": "../../assets/hero/icons8-html-logo-96.png"
+  },
+  {
+    "title": "CSS",
+    "imageSrc": "/assets/hero/icons8-css-logo-96.png"
+  },
+  {
+    "title": "JavaScript",
+    "imageSrc": "/assets/hero/icons8-javascript-96.png"
+  },
+  {
+    "title": "React",
+    "imageSrc": "/assets/hero/icons8-react-96.png"
+  },
+  {
+    "title": "Next",
+    "imageSrc": "/assets/hero/next-js 2.png"
+  },
+  {
+    "title": "MongoDB",
+    "imageSrc": "/assets/hero/icons8-mongodb-96.png"
+  },
+  {
+    "title": "Node",
+    "imageSrc": "/assets/hero/icons8-node-js-96.png"
+  },
+  {
+    "title": "Express",
+    "imageSrc": "/assets/hero/icons8-express-js-96.png"
+  },
+  {
+    "title": "Git",
+    "imageSrc": "/assets/hero/icons8-git-logo-96.png"
+  },
+  {
+    "title": "WordPress",
+    "imageSrc": "/assets/hero/icons8-wordpress-96.png"
+  },
+  {
+    "title": "Figma",
+    "imageSrc": "/assets/hero/icons8-figma-96.png"
+  },
+  {
+    "title": "Learning...",
+    "imageSrc": "/assets/hero/icons8-plus-sign-96.png"
+  }
+]
