@@ -5,9 +5,16 @@ import { Spin as Hamburger } from "hamburger-react";
 export default function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [showHamburger, setShowHamburger] = useState(window.innerWidth < 830);
+  const [hamburgerToggled, setHamburgerToggled] = useState(false);
 
   const handleToggle = (toggled) => {
     setMenuOpen(toggled);
+    setHamburgerToggled(toggled);
+  };
+
+  const handleMenuItemClick = () => {
+    setMenuOpen(false);
+    setHamburgerToggled(false);
   };
 
   useEffect(() => {
@@ -43,22 +50,23 @@ export default function Navbar() {
             easing="ease-in"
             hideOutline={false}
             onToggle={handleToggle}
+            toggled={hamburgerToggled}
           />
         )}
       </div>
       <div className={styles.menu}>
         <ul
           className={`${styles.menuItems} ${isMenuOpen && styles.menuOpen}`}
-          onClick={() => setMenuOpen(false)}
+          onClick={handleMenuItemClick}
         >
           <li>
             <a href="#about">About</a>
           </li>
           <li>
-            <a href="#experience">My Experience</a>
+            <a href="#experience">Tech Experience</a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <a href="#projects">My Projects</a>
           </li>
         </ul>
       </div>

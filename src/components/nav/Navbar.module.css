@@ -16,6 +16,10 @@
   color: var(--color-text);
 }
 
+.title:hover {
+  cursor: pointer;
+}
+
 .hamburger-react {
   margin-bottom: 50px;
 }
@@ -65,6 +69,11 @@ ul {
   width: 100%;
 }
 
+.menuItems a:hover {
+  font-weight: 900;
+  color: #b6550b;
+}
+
 @media screen and (max-width: 830px) {
   .navbar {
     flex-direction: column;
@@ -77,13 +86,13 @@ ul {
   }
 
   .menu {
-    position: relative;
+    position: absolute;
     display: flex;
     right: 0;
     margin-right: 10%;
     align-items: center;
     gap: 10px;
-    z-index: 3;
+    z-index: 11;
   }
 
   .hamburger {
@@ -97,7 +106,7 @@ ul {
     align-items: center;
     gap: 12px;
     border-radius: 10px;
-    background: rgb(255, 162, 0);
+    background: rgba(255, 162, 0, 0.7);
     background: linear-gradient(
       0deg,
       rgba(238, 169, 71, 0.2) 0% rgba(238, 169, 71, 1) 100%
@@ -108,7 +117,8 @@ ul {
     top: 100%;
     left: 0;
     right: 0;
-    z-index: 2;
+    z-index: 1;
+    margin-right: 10px;
   }
 
   .menuOpen {
