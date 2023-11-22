@@ -1,7 +1,7 @@
 [
   {
     "title": "What A Tune!",
-    "imageSrc": "/assets/hero/whatatune.png",
+    "imageSrc": "/assets/whatatune.png",
     "description": "A music generator website recommending songs based on a user's mood and genre preference.",
     "skills": ["HTML", "JavaScript", "CSS"],
     "demo": "https://samueledraper.github.io/what-a-tune/",
@@ -9,7 +9,7 @@
   },
   {
     "title": "The Loop",
-    "imageSrc": "/assets/hero/theloop.png",
+    "imageSrc": "/assets/theloop.png",
     "description": "An inclusive commmunity event website for underrepresented groups to seek/post events.",
     "skills": ["React", "Node", "Express", "MongoDB", "Auth0"],
     "demo": "https://the-loop-final-project.vercel.app/",
@@ -17,7 +17,7 @@
   },
   {
     "title": "Under Construction",
-    "imageSrc": "/assets/hero/undercons.png",
+    "imageSrc": "/assets/undercons.png",
     "description": "Current project, currently under construction. Due end of 2024, come back to check it out!",
     "skills": ["???", "???", "???", "???", "???", "???", "???", "???"],
     "demo": "",
