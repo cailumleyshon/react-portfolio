@@ -23,11 +23,17 @@ export default function About() {
               <p>
                 - Participated in code reviews, design reviews, and daily
                 stand-ups to ensure use of industry best practices.
-                <br />- Built several WPAs both independently and with teams of
-                up to 4 developers.
-                <br />- Learnt an array of technologies, frameworks and
-                libraries to contribute to diverse projects and enhance my
-                programming skills.
+              </p>
+              <p>
+                {" "}
+                - Built several WPAs both independently and with teams of up to
+                4 developers.
+              </p>
+              <p>
+                {" "}
+                - Learnt an array of technologies, frameworks and libraries to
+                contribute to diverse projects and enhance my programming
+                skills.
               </p>
             </div>
           </li>
