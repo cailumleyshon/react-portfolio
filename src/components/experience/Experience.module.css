@@ -51,7 +51,7 @@
 }
 
 .skillImg:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   background-color: rgba(82, 116, 128, 0.1);
 }
 
@@ -73,6 +73,11 @@
   .skills {
     width: 100%;
     flex-direction: row;
+    justify-content: center;
+  }
+
+  .title {
+    display: flex;
     justify-content: center;
   }
 }
