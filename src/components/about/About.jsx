@@ -1,4 +1,4 @@
-import img from "/assets/hero/about/comp.png";
+import img from "/assets/comp.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBuildingColumns,
