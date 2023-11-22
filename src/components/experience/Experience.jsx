@@ -1,5 +1,6 @@
 import styles from "./Experience.module.css";
 import techskills from "../../data/techskills.json";
+import { getImageUrl } from "../../utils";
 
 export default function Experience() {
   return (
@@ -11,7 +12,7 @@ export default function Experience() {
             return (
               <div key={id} className={styles.skill}>
                 <div className={styles.skillImg}>
-                  <img src={skill.imageSrc} alt={skill.title} />
+                  <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
                 </div>
                 <p>{skill.title}</p>
               </div>

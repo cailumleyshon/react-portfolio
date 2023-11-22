@@ -2,13 +2,18 @@ import styles from "./ProjectCard.module.css";
 import { faGithub } from "@fortawesome/fontawesome-free-brands";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { getImageUrl } from "../../utils";
 
 export default function ProjectCard({
   project: { title, imageSrc, description, skills, demo, source },
 }) {
   return (
     <div className={styles.container}>
-      <img className={styles.img} src={imageSrc} alt={`Image of ${title}`} />
+      <img
+        className={styles.img}
+        src={getImageUrl(imageSrc)}
+        alt={`Image of ${title}`}
+      />
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
       <ul className={styles.skills}>

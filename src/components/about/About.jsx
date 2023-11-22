@@ -1,4 +1,3 @@
-import img from "/assets/comp.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBuildingColumns,
@@ -7,6 +6,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "./About.module.css";
+import { getImageUrl } from "../../utils";
 
 export default function About() {
   return (
@@ -74,7 +74,11 @@ export default function About() {
             </div>
           </li>
         </ul>
-        <img className={styles.compImg} src={img} alt="Computer Image" />
+        <img
+          className={styles.compImg}
+          src={getImageUrl("comp.png")}
+          alt="Computer Image"
+        />
       </div>
     </section>
   );
