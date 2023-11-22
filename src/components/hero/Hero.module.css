@@ -58,7 +58,6 @@
   display: flex;
   justify-content: space-evenly;
   gap: 25px;
-  border-bottom: 1px solid #b6550b;
 }
 .icon {
   height: 60px;
