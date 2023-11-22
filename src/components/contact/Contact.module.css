@@ -1,0 +1,14 @@
+@import "../../vars.css";
+
+.container {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: #b6550b;
+}
+
+.footerMsg {
+  margin-bottom: 20px;
+}
