@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section className={styles.container}>
       <img
-        src={getImageUrl("./assets/avatar.png")}
+        src={getImageUrl("avatar.png")}
         alt="Hero Image"
         className={styles.heroImg}
       />
