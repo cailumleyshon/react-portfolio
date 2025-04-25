@@ -1,5 +1,6 @@
 {
-  "name": "react-portfolio-2",
+  "homepage": "https://cailumleyshon.github.io/react-portfolio/",
+  "name": "react-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
