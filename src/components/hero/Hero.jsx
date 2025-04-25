@@ -3,6 +3,7 @@ import styles from "./Hero.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelopeOpen } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/fontawesome-free-brands";
+import { faFile } from "@fortawesome/free-solid-svg-icons";
 
 export default function Hero() {
   return (
@@ -46,6 +47,14 @@ export default function Hero() {
             }
             className={styles.icon}
             icon={faGithub}
+            style={{ color: "#d1610b" }}
+          />
+          <FontAwesomeIcon
+            onClick={() =>
+              (window.location.href = "/assets/General:Hospitality CV.pdf")
+            }
+            className={styles.icon}
+            icon={faFile}
             style={{ color: "#d1610b" }}
           />
         </div>

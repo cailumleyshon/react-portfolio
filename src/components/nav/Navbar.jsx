@@ -36,6 +36,7 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       <div className={styles.burger}>
         <a className={styles.title} href="/">
+          <span className={styles.blinktext}>&gt;&nbsp;</span>
           cailum.dev
           <span className={styles.blinktext}>_</span>
         </a>
@@ -67,6 +68,9 @@ export default function Navbar() {
           </li>
           <li>
             <a href="#projects">My Projects</a>
+          </li>
+          <li>
+            <a href="#contactme">Contact Me</a>
           </li>
         </ul>
       </div>
